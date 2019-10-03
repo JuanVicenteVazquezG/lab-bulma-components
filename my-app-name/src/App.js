@@ -1,15 +1,29 @@
 import React, { Component } from "react";
 // import logo from './logo.svg';
 import "./App.css";
-import Navbar from "./components/Navbar";
+import Button from "./components/Button";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <Navbar />
-        </header>
+      <div>
+        <Button isSmall isDanger className="is-rounded my-class">
+          Danger
+        </Button>
+        <Button isSmall isSuccess>
+          Success
+        </Button>
+
+        <Button isSmall isWarning className="is-rounded my-class">
+          Warning!!
+        </Button>
+        <Button isSmall isPrimary>
+          Primary
+        </Button>
+
+        <Button isSmall isPrimary isLarge>
+          Large
+        </Button>
       </div>
     );
   }
